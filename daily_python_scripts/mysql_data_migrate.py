@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-数据迁移:
-python3 mysql_data_migrate.py
-attention: 执行脚本前先在目标数据库创建好库
-"""
 
 import os
 import time
+
+"""
+数据迁移:
+Tips: 执行脚本前先安装python3，并在目标数据库创建好库
+python3 mysql_data_migrate.py
+"""
 
 print("*" * 50,"请输入源数据库信息", "*" * 50)
 src_db_host = input("Enter source db host:")
