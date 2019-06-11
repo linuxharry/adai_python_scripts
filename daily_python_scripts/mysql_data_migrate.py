@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+__author__ = "Jason Li"
+
 import os
 import time
+
 
 """
 数据迁移:
