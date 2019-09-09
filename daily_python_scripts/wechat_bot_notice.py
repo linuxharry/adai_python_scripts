@@ -6,8 +6,9 @@
 TO DO: 替换 text 信息为 args
 """
 import requests
+import sys
 
-token = u'xxxxxxx'
+token = u'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=d949d5cc-ae6b-4ff8-b7b0-6afb8d5d9286'
 
 
 def build_text(text):
@@ -38,7 +39,7 @@ def send_text(token, text):
 
 
 if __name__ == '__main__':
-    text = u'温馨提示：施主，xxxxx?'
+    text = sys.argv[1]
     send_text(token, text)
 
 
