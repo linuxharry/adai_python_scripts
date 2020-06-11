@@ -3,12 +3,11 @@
 
 """
 发送微信机器人消息提醒！
-TO DO: 替换 text 信息为 args
 """
 import requests
 import sys
 
-token = u'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=d949d5cc-ae6b-4ff8-b7b0-6afb8d5d9286'
+token = u'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=aca0ef08-9f7e-4fb9-a0cc-62686b6d637d'
 
 
 def build_text(text):
