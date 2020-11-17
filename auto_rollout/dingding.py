@@ -124,10 +124,10 @@ def start_deploy():
                 finish_time_array = time.strptime(task_finish_time, "%Y-%m-%d %H:%M:%S")
                 finish_timestamp = int(round(time.mktime(finish_time_array) * 1000))
 
-                # 创建一个3分钟前的时间戳
-                ts3 = int(get_timestamp(3))
+                # 创建一个1分钟前的时间戳
+                ts1 = int(get_timestamp(1))
 
-                if task_status == 'COMPLETED' and task_result == 'AGREE' and finish_timestamp >= ts3:
+                if task_status == 'COMPLETED' and task_result == 'AGREE' and finish_timestamp >= ts1:
                     start_build_job(task_name)
                     print(current_time + ' ' + task_name + ' ' + 'Updated!!!')
                 else:
