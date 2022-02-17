@@ -16,6 +16,7 @@ import commands
 import urllib2
 from op_tools import falcon
 
+
 class RedisStats:
     # 如果你是自己编译部署到redis，请将下面的值替换为你到redis-cli路径
     _redis_clis = ["/usr/local/bin/redis-cli", '/usr/bin/redis-cli']
