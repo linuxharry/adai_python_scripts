@@ -13,7 +13,7 @@ Tips: 执行脚本前先安装python3，并在目标数据库创建好库
 python3 mysql_data_migrate.py
 """
 
-print("*" * 50,"请输入源数据库信息", "*" * 50)
+print("*" * 50, "请输入源数据库信息", "*" * 50)
 src_db_host = input("Enter source db host:")
 src_db_user = input("Enter source db user:")
 src_db_pwd = input("Enter source db passwd:")
